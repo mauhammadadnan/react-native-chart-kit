@@ -34,13 +34,13 @@
     "dist"
   ],
   "scripts": {
-    "start": "expo start",
+    "start": "node init && expo start",
     "eject": "expo eject",
     "android": "expo start --android",
     "ios": "expo start --ios",
     "test": "jest",
-    "build": "tsc",
-    "dev": "tsc --watch",
+    "build": "node init && tsc",
+    "dev": "node init && tsc --watch",
     "prepublish": "yarn build"
   },
   "jest": {
@@ -60,5 +60,11 @@
     "hooks": {
       "pre-commit": "pretty-quick --staged"
     }
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/indiespirit/react-native-chart-kit",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/indiespirit/react-native-chart-kit"
   }
 }
